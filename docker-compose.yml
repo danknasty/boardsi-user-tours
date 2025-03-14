@@ -13,27 +13,27 @@ services:
       - .env
     environment:
       - PRISMA_BINARY_PLATFORM=linux-musl-openssl-3.0.x
-    depends_on:
-      - postgres
-      - redis
+    # depends_on:
+    #   - postgres
+    #   - redis
     restart: always
 
-  postgres:
-    image: postgres:15-alpine
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=usertour
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    restart: always
+#   postgres:
+#     image: postgres:15-alpine
+#     environment:
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#       - POSTGRES_DB=usertour
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     restart: always
 
-  redis:
-    image: redis:alpine
-    volumes:
-      - redis_data:/data
-    restart: always
+#   redis:
+#     image: redis:alpine
+#     volumes:
+#       - redis_data:/data
+#     restart: always
 
-volumes:
-  postgres_data:
-  redis_data:
+# volumes:
+#   postgres_data:
+#   redis_data:

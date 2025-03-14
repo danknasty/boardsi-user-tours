@@ -30,11 +30,18 @@ async function bootstrap() {
   app.set('trust proxy', true);
 
   const configService = app.get(ConfigService);
-  // Uncomment these lines to use the Redis adapter:
-  const adapter = new RedisIoAdapter(app);
-  await adapter.connectToRedis();
-  app.useWebSocketAdapter(adapter);
-  app.use(cookieParser());
+  // Set up Redis adapter for WebSockets with error handling
+  try {
+    const adapter = new RedisIoAdapter(app);
+    await adapter.connectToRedis();
+    app.useWebSocketAdapter(adapter);
+    console.log('WebSocket adapter with Redis configured successfully');
+    app.use(cookieParser());
+  } catch (error) {
+    console.error('Failed to initialize Redis adapter:', error);
+    console.warn('Application will continue without Redis for WebSockets');
+  }
+
 
   /**
    * Limit the number of user's requests
