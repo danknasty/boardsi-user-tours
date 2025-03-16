@@ -8,6 +8,9 @@ import { AppModule } from './app.module';
 // import { AllExceptionsFilter } from './common/filter';
 import cookieParser from 'cookie-parser';
 
+const change = () => {};
+change();
+
 async function bootstrap() {
   const options: NestApplicationOptions = {};
   //for local
@@ -41,7 +44,6 @@ async function bootstrap() {
     console.error('Failed to initialize Redis adapter:', error);
     console.warn('Application will continue without Redis for WebSockets');
   }
-
 
   /**
    * Limit the number of user's requests
