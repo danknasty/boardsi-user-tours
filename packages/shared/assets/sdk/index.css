@@ -48,6 +48,9 @@
 .usertour-widget-root a {
   color: var(--usertour-link-color);
   text-decoration: underline;
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 .usertour-widget-root a:hover {
@@ -353,6 +356,8 @@ _:future,
 
 a[href*='usertour.io'] {
   display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 a {

@@ -4,7 +4,7 @@ import { AssetAttributes, Frame, useFrame } from '@usertour-ui/frame';
 import { createContext } from '@usertour-ui/react-context';
 import * as ArrowPrimitive from '@usertour-ui/react-arrow';
 import { useSize } from '@usertour-ui/react-use-size';
-import { CloseIcon, UsertourIcon } from '@usertour-ui/icons';
+import { CloseIcon } from '@usertour-ui/icons';
 import { useComposedRefs } from '@usertour-ui/react-compose-refs';
 import {
   computePosition,
@@ -697,18 +697,7 @@ const PopperStaticContent = forwardRef<HTMLDivElement, PopperStaticContentProps>
 const PopperMadeWith = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <>
-      <div ref={ref} className="absolute bottom-2 left-3 text-xs	opacity-50	hover:opacity-75		">
-        <a
-          href="https://www.usertour.io"
-          className="!text-sdk-foreground !no-underline	 flex flex-row space-x-0.5 items-center !font-sans "
-          target="_blank"
-          rel="noreferrer"
-          // onClick={()=>{window.top?.open("https://www.usertour.io", "_blank")}}
-        >
-          <UsertourIcon width={14} height={14} />
-          <span>Made with Usertour</span>
-        </a>
-      </div>
+      <div ref={ref} className=""></div>
     </>
   );
 });
