@@ -352,5 +352,5 @@ _:future,
 }
 
 a[href*='usertour.io'] {
-  display: none;
+  display: none !important;
 }

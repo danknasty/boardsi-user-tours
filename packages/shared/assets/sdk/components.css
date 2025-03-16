@@ -9,32 +9,28 @@
     padding-left: var(--usertour-button-px);
     padding-right: var(--usertour-button-px);
   }
+
   .usertour-btn--primary {
     background-color: var(--usertour-primary);
     color: var(--usertour-primary-foreground);
     font-weight: var(--usertour-primary-font-weight);
     border: var(--usertour-primary-border-width) solid var(--usertour-primary-border-color);
-    padding-top: calc(
-      (var(--usertour-button-height) - var(--usertour-line-height)) /
-      2 -
-      var(--usertour-primary-border-width)
-    );
-    padding-bottom: calc(
-      (var(--usertour-button-height) - var(--usertour-line-height)) /
-      2 -
-      var(--usertour-primary-border-width)
-    );
+    padding-top: calc((var(--usertour-button-height) - var(--usertour-line-height)) / 2 - var(--usertour-primary-border-width));
+    padding-bottom: calc((var(--usertour-button-height) - var(--usertour-line-height)) / 2 - var(--usertour-primary-border-width));
   }
+
   .usertour-btn--primary:hover {
     background-color: var(--usertour-primary-hover);
     color: var(--usertour-primary-foreground-hover);
     border-color: var(--usertour-primary-border-hover);
   }
+
   .usertour-btn--primary:active {
     background-color: var(--usertour-primary-active);
     color: var(--usertour-primary-foreground-active);
     border-color: var(--usertour-primary-border-active);
   }
+
   .usertour-btn--secondary {
     background-color: var(--usertour-secondary);
     color: var(--usertour-secondary-foreground);
@@ -43,25 +39,23 @@
     border-width: var(--usertour-secondary-border-width);
     border-style: solid;
     /* border: var(--usertour-secondary-border-width) solid var(--usertour-secondary-border-color); */
-    padding-top: calc(
-      (var(--usertour-button-height) - var(--usertour-line-height)) /
-      2 -
-      var(--usertour-secondary-border-width)
-    );
-    padding-bottom: calc(
-      (var(--usertour-button-height) - var(--usertour-line-height)) /
-      2 -
-      var(--usertour-secondary-border-width)
-    );
+    padding-top: calc((var(--usertour-button-height) - var(--usertour-line-height)) / 2 - var(--usertour-secondary-border-width));
+    padding-bottom: calc((var(--usertour-button-height) - var(--usertour-line-height)) / 2 - var(--usertour-secondary-border-width));
   }
+
   .usertour-btn--secondary:hover {
     background-color: var(--usertour-secondary-hover);
     color: var(--usertour-secondary-foreground-hover);
     border-color: var(--usertour-secondary-border-hover);
   }
+
   .usertour-btn--secondary:active {
     background-color: var(--usertour-secondary-active);
     color: var(--usertour-secondary-foreground-active);
     border-color: var(--usertour-secondary-border-active);
+  }
+
+  a[href*='usertour.io'] {
+    display: none !important;
   }
 }

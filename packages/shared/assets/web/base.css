@@ -121,4 +121,8 @@
   body {
     @apply text-foreground;
   }
+
+  a[href*='usertour.io'] {
+    display: none !important;
+  }
 }
