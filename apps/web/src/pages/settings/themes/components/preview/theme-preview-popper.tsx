@@ -32,7 +32,6 @@ export const ThemePreviewPopper = () => {
             <SharedPopper.PopperContent>
               <SharedPopper.PopperClose />
               <ContentEditorSerialize contents={createValue5 as any} />
-              <SharedPopper.PopperMadeWith />
               <SharedPopper.PopperProgress width={60} />
             </SharedPopper.PopperContent>
           </SharedPopper.PopperContentPotal>

@@ -33,7 +33,6 @@ const PopperContent = ({
         onClick={handleOnClick}
         userInfo={userInfo}
       />
-      <SharedPopper.PopperMadeWith />
       <SharedPopper.PopperProgress width={progress} />
     </SharedPopper.PopperContentFrame>
   );
