@@ -1,4 +1,3 @@
-import { PopperMadeWith } from '@usertour-ui/sdk';
 import { LauncherContentWrapper, LauncherPopperContent } from '@usertour-ui/sdk/src/launcher';
 import { LauncherPopperContentPotal } from '@usertour-ui/sdk/src/launcher';
 import { LauncherPopper } from '@usertour-ui/sdk/src/launcher';
@@ -119,7 +118,6 @@ const LauncherWidgetCore = (props: LauncherWidgetCoreProps) => {
               onClick={handleOnClick}
               userInfo={userInfo}
             />
-            <PopperMadeWith />
           </LauncherPopperContent>
         </LauncherPopperContentPotal>
       </LauncherPopper>

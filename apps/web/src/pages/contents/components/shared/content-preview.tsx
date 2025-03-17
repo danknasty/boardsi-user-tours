@@ -3,7 +3,6 @@ import { ChecklistContainer, ChecklistDropdown } from '@usertour-ui/sdk';
 import { ChecklistProgress } from '@usertour-ui/sdk';
 import { ChecklistItems } from '@usertour-ui/sdk';
 import { ChecklistDismiss } from '@usertour-ui/sdk';
-import { PopperMadeWith } from '@usertour-ui/sdk';
 import { ChecklistStaticPopper } from '@usertour-ui/sdk';
 import { ChecklistRoot } from '@usertour-ui/sdk';
 import { LauncherContainer, LauncherView } from '@usertour-ui/sdk/src/launcher';
@@ -139,7 +138,6 @@ const ChecklistPreview = (props: {
           <ChecklistProgress width={45} />
           <ChecklistItems />
           <ChecklistDismiss />
-          <PopperMadeWith />
         </ChecklistStaticPopper>
       </ChecklistContainer>
     </ChecklistRoot>

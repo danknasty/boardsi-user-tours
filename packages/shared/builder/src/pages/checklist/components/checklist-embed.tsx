@@ -10,7 +10,6 @@ import {
   ChecklistPopperContentBody,
   ChecklistProgress,
   ChecklistRoot,
-  PopperMadeWith,
 } from '@usertour-ui/sdk';
 import { ContentEditor, ContentEditorRoot } from '@usertour-ui/shared-editor';
 import { ChecklistInitialDisplay, Theme } from '@usertour-ui/types';
@@ -87,7 +86,6 @@ export const ChecklistEmbed = () => {
                 <ChecklistItems />
                 <ChecklistDismiss />
               </ChecklistPopperContentBody>
-              <PopperMadeWith />
             </ChecklistPopperContent>
           </ChecklistPopper>
         </ChecklistContainer>

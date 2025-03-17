@@ -5,7 +5,6 @@ import {
   Popper,
   PopperClose,
   PopperContent,
-  PopperMadeWith,
   PopperModalContentPotal,
   PopperProgress,
 } from '@usertour-ui/sdk';
@@ -129,7 +128,7 @@ export const ContentModal = forwardRef<HTMLDivElement, ContentModalProps>(
                   getOembedInfo={getOembedInfo}
                   createStep={createStep}
                 />
-                <PopperMadeWith />
+
                 <PopperProgress width={progress} />
               </PopperContent>
             </PopperModalContentPotal>

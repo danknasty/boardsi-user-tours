@@ -9,7 +9,6 @@ import {
   ChecklistProgress,
   ChecklistRoot,
 } from '@usertour-ui/sdk/src/checklist';
-import { PopperMadeWith } from '@usertour-ui/sdk/src/popper';
 import {
   ChecklistCompletionOrder,
   ChecklistData,
@@ -77,7 +76,6 @@ export const ThemePreviewChecklist = (props: ThemePreviewChecklistProps) => {
                 <ChecklistProgress width={45} />
                 <ChecklistItems />
                 <ChecklistDismiss />
-                <PopperMadeWith />
               </ChecklistPopperContent>
             </ChecklistPopper>
           </ChecklistContainer>

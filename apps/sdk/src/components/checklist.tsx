@@ -1,5 +1,4 @@
 import { AssetAttributes } from '@usertour-ui/frame';
-import { PopperMadeWith } from '@usertour-ui/sdk';
 import { ChecklistProgress } from '@usertour-ui/sdk';
 import {
   ChecklistDismiss,
@@ -67,7 +66,6 @@ const ChecklistWidgetCore = (props: ChecklistWidgetCoreProps) => {
           <ChecklistItems onClick={handleItemClick} disabledUpdate={true} />
           <ChecklistDismiss />
         </ChecklistPopperContentBody>
-        <PopperMadeWith />
       </ChecklistPopperUseIframe>
     </ChecklistRoot>
   );

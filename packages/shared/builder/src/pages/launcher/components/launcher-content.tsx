@@ -1,5 +1,4 @@
 import { EXTENSION_CONTENT_POPPER } from '@usertour-ui/constants';
-import { PopperMadeWith } from '@usertour-ui/sdk';
 import {
   LauncherContainer,
   LauncherContentWrapper,
@@ -61,7 +60,6 @@ export const LauncherContentMain = forwardRef<HTMLDivElement, LauncherContentPro
                   }
                   onValueChange={onValueChange}
                 />
-                <PopperMadeWith />
               </LauncherPopperContent>
             </LauncherPopperContentPotal>
           </LauncherPopper>
