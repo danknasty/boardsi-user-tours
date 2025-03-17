@@ -125,9 +125,4 @@
   a[href*='usertour.io'] {
     display: none !important;
   }
-
-  a {
-    display: none !important;
-    opacity: 0 !important;
-  }
 }
