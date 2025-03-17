@@ -697,7 +697,7 @@ const PopperStaticContent = forwardRef<HTMLDivElement, PopperStaticContentProps>
 const PopperMadeWith = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <>
-      <div ref={ref} className=""></div>
+      <div ref={ref} />
     </>
   );
 });
@@ -709,7 +709,6 @@ const PopperProgress = forwardRef<HTMLDivElement, PopperProgresshProps>((props, 
   const { width = 0 } = props;
   return (
     <>
-      <div className="h-2.5" />
       <div
         ref={ref}
         className="absolute top-0 left-0 right-0 overflow-hidden "
